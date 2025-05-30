@@ -8,6 +8,8 @@ import UppercaseText from './uppercaseText/UppercaseText';
 import WriteGreeting from './writeGreeting/WriteGreeting';
 import CalculatePower from './calculatePower/CalculatePower';
 import CountWords from './countWords/CountWords';
+import CalculateAge from './calculateAge/CalculateAge';
+import FindMaximum from './findMaximum/FindMaximum';
 
 const container = document.getElementById('root');
 
@@ -26,6 +28,8 @@ createRoot(container).render(
 		<UppercaseText>mayusculas</UppercaseText>
 		<WriteGreeting nombre='Pedro' hora='11:00' />
 		<CalculatePower number={4} exp={3} />
-		<CountWords words='hola mi mundo feo' />
+		<CountWords words='hola mi mundo' />
+		<CalculateAge fecha='1996-01-10' />
+		<FindMaximum listNum={[5, 9, 52, 1, 3, 7]} />
 	</>
 );
