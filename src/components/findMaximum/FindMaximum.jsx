@@ -1,14 +1,10 @@
-const FindMaximum = ({ listNum }) => {
-	listNum.sort((a, b) => a - b);
+const selectMax = ({ list }) => {
+	list.sort((a, b) => a - b);
+	const stringList = String(list);
+	return stringList;
+};
 
-	return (
-		<h2>
-			<ul>
-				{listNum.map((element, index) => (
-					<li key={index}>{element}</li>
-				))}
-			</ul>
-		</h2>
-	);
+const FindMaximum = ({ listNum }) => {
+	return <h2>{selectMax(listNum)}</h2>;
 };
 export default FindMaximum;
