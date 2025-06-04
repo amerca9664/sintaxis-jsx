@@ -1,7 +1,8 @@
-const selectMax = ({ list }) => {
+const selectMax = list => {
 	list.sort((a, b) => a - b);
 	const stringList = String(list);
-	return stringList;
+	const max = list.at(-1);
+	return `El número más alto de la lista [${stringList}] es [${max}]`;
 };
 
 const FindMaximum = ({ listNum }) => {

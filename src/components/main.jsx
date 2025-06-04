@@ -10,6 +10,9 @@ import CalculatePower from './calculatePower/CalculatePower';
 import CountWords from './countWords/CountWords';
 import CalculateAge from './calculateAge/CalculateAge';
 import FindMaximum from './findMaximum/FindMaximum';
+import CalculateAverage from './calculateAverage/CalculateAverage';
+import FindLongestString from './findLongestString/FindLongestString';
+import DisplayPersonInfo from './displayPersonInfo/DisplayPersonInfo';
 
 const container = document.getElementById('root');
 
@@ -30,6 +33,13 @@ createRoot(container).render(
 		<CalculatePower number={4} exp={3} />
 		<CountWords words='hola mi mundo' />
 		<CalculateAge fecha='1996-01-10' />
-		<FindMaximum listNum={[5, 9, 52, 1, 3, 7]} />
+		<FindMaximum listNum={[5, 9, 52, 1, 3, 7, 100]} />
+		<CalculateAverage listNumMed={[5, 9, 52, 1, 3, 7, 100]} />
+		<FindLongestString
+			listWords={['hola', 'extraordinario', 'dos', 'claudia', 'a']}
+		/>
+		<DisplayPersonInfo
+			persona={{ nombre: 'Marco', edad: 30, ocupacion: 'Ingeniero' }}
+		/>
 	</>
 );
